@@ -6,7 +6,7 @@ set -e
 source dev-container-features-test-lib
 
 # Definition specific tests
-check "version" mise -v
+check "2025.2.0" mise -v
 
 # Report result
 reportResults
