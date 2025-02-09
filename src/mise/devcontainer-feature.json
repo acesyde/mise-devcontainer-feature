@@ -6,12 +6,12 @@
   "documentationURL": "https://github.com/jdx/devcontainer-features/tree/main/src/mise",
   "options": {
     "version": {
-      "type": "string",
+      "default": "latest",
+      "description": "Select the version to install.",
       "proposals": [
         "latest"
       ],
-      "default": "latest",
-      "description": "Select version of mise."
+      "type": "string"
     }
   },
   "installsAfter": [
