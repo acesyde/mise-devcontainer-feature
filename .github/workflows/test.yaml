@@ -13,11 +13,12 @@ jobs:
     strategy:
       matrix:
         features:
-          - alpine-docker
+          - mise
         baseImage:
           - debian:latest
           - ubuntu:latest
           - mcr.microsoft.com/devcontainers/base:ubuntu
+          - alpine:latest
     steps:
       - uses: actions/checkout@v4
 
