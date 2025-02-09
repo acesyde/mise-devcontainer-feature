@@ -2,7 +2,7 @@
   "default_debian": {
     "image": "mcr.microsoft.com/devcontainers/base:debian",
     "features": {
-      "immuadmin": {}
+      "mise": {}
     }
   },
   "ubuntu_with_version": {
