@@ -7,7 +7,7 @@ A devcontainer feature to install mise
 
 ```json
 "features": {
-    "ghcr.io/jdx/devcontainer-features/mise:0": {}
+    "ghcr.io/acesyde/mise-devcontainer-feature/mise:0": {}
 }
 ```
 
@@ -25,4 +25,4 @@ This Feature should work on recent versions of Debian/Ubuntu-based distributions
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/acesyde/mise-devcontainer-feature/blob/main/src/mise/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
