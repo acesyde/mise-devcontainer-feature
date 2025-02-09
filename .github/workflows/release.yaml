@@ -10,6 +10,7 @@ on:
 jobs:
   run-tests:
     uses: ./.github/workflows/test.yaml
+    name: 🧪 Run tests
     secrets: inherit
     with:
       enabled: ${{ inputs.run_tests }}
@@ -18,14 +19,16 @@ jobs:
     needs: [run-tests]
     if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-24.04
+    name: 🚀 Deploy
     permissions:
       contents: write
       pull-requests: write
       packages: write
     steps:
       - uses: actions/checkout@v4
+        name: 📩 Checkout repository
 
-      - name: "Publish Features"
+      - name: 📦 Publish features
         uses: devcontainers/action@v1
         with:
           publish-features: "true"

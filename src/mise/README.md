@@ -7,7 +7,7 @@ A devcontainer feature to install mise
 
 ```json
 "features": {
-    "ghcr.io/jdx/devcontainer-features/mise:0": {}
+    "ghcr.io/jdx/mise/mise:0": {}
 }
 ```
 
@@ -15,7 +15,7 @@ A devcontainer feature to install mise
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select version of mise. | string | latest |
+| version | Select the version to install. | string | latest |
 
 ## OS Support
 
