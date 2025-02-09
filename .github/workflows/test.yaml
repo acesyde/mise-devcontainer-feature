@@ -15,10 +15,15 @@ jobs:
         features:
           - mise
         baseImage:
-          - debian:latest
-          - ubuntu:latest
-          - mcr.microsoft.com/devcontainers/base:ubuntu
-          - alpine:latest
+          - "ubuntu:focal"
+          - "ubuntu:jammy"
+          - "debian:11"
+          - "debian:12"
+          - "alpine:3.14"
+          - "mcr.microsoft.com/devcontainers/base:ubuntu"
+          - "mcr.microsoft.com/devcontainers/base:debian"
+          - "mcr.microsoft.com/devcontainers/base:noble"
+          - "mcr.microsoft.com/devcontainers/base:alpine"
     steps:
       - uses: actions/checkout@v4
 
@@ -34,7 +39,7 @@ jobs:
     strategy:
       matrix:
         features:
-          - alpine-docker
+          - mise
     steps:
       - uses: actions/checkout@v4
 
